@@ -1,0 +1,54 @@
+.nav-link{
+    color:rgb(12, 84, 35)
+}
+#search{
+    border-color: rgb(12, 84, 35);
+}
+.btn:hover{
+    background-color:lavender;
+    color:gray;
+}
+.navbar-toggler{
+    border:none;
+    margin-left: 15px;
+}
+.navbar-toggler-icon{
+    width: 25px;
+}
+.carousel-item img{
+    gap:10px
+}
+.btn{
+    border-radius: 0;
+}
+#big-picture{
+    background-color: rgb(12, 84, 35);
+}
+.d-grid{
+    grid-template-columns: auto auto auto auto auto;
+    gap:10px
+}
+.d-grid img{
+    height: 100%;
+    width: 100%;
+}
+footer{
+background-color: rgb(12, 84, 35);
+}
+footer ul{
+    list-style: none;
+}
+.products li:hover{
+    color: grey;
+    cursor: pointer;
+}
+.information li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media (min-width: 768px) { 
+    .information{
+        display: flex;
+        justify-content: space-between;
+    }
+ }

@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg nav-underline">
+        <div class="container-xl">
+          <a class="navbar-brand" href="#">
+            <img src="https://www.woodlandworldwide.com/headerlogo.svg" alt="Woodland" width="80" height="52.49">
+          </a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <a class="navbar-brand" href="#">
+                <img src="https://www.woodlandworldwide.com/headerlogo.png" alt="Woodland" width="80" height="52.49">
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Men</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Women</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" >Brands</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" >About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" >Labs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <form class="d-flex ms-auto" role="search">
+            <button class="btn btn-outline-success ps-3 pe-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search me-2" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>Search</button>
+          </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="https://images.woodlandworldwide.app/assets/may2024/hero_banner_1.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://images.woodlandworldwide.app/assets/may2024/hero_banner_3.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://images.woodlandworldwide.app/assets/may2024/hero_banner_4.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://images.woodlandworldwide.app/assets/may2024/hero_banner_5.webp" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-xl py-4">
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-4">
+        <div class="card position-relative">
+          <img src="https://images.woodlandworldwide.app/assets/Winter/h_cat_1.webp" class="card-img-top" alt="...">
+          <div class="card-body position-absolute  text-center bottom-0 start-50 translate-middle-x">
+            <h3 class="card-title text-white">Bestsellers</h3>
+            <a href="#" class="btn btn-light px-4 py-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card position-relative">
+          <img src="https://images.woodlandworldwide.app/assets/Winter/h_cat_2.webp" class="card-img-top" alt="...">
+          <div class="card-body position-absolute text-center bottom-0 start-50 translate-middle-x">
+            <h3 class="card-title text-white">Casuals</h3>
+            <a href="#" class="btn btn-light px-4 py-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card position-relative">
+          <img src="https://images.woodlandworldwide.app/assets/Winter/h_cat_3.webp" class="card-img-top" alt="...">
+          <div class="card-body position-absolute text-center bottom-0 start-50 translate-middle-x">
+            <h3 class="card-title text-white">Boots</h3>
+            <a href="#" class="btn btn-light px-4 py-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card position-relative">
+          <img src="https://images.woodlandworldwide.app/assets/Winter/h_cat_4.webp" class="card-img-top" alt="...">
+          <div class="card-body position-absolute text-center bottom-0 start-50 translate-middle-x">
+            <h3 class="card-title text-white">Canvas</h3>
+            <a href="#" class="btn btn-light px-4 py-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card position-relative">
+          <img src="https://images.woodlandworldwide.app/assets/Winter/h_cat_5.webp" class="card-img-top" alt="...">
+          <div class="card-body position-absolute text-center bottom-0 start-50 translate-middle-x">
+            <h3 class="card-title text-white">Men's Apparel</h3>
+            <a href="#" class="btn btn-light px-4 py-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card position-relative">
+          <img src="https://images.woodlandworldwide.app/assets/Winter/h_cat_6.webp" class="card-img-top" alt="...">
+          <div class="card-body position-absolute text-center bottom-0 start-50 translate-middle-x">
+            <h3 class="card-title text-white">Women Apparel</h3>
+            <a href="#" class="btn btn-light px-4 py-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      </section>
+      <section>
+        <div class="card position-relative">
+          <img src="https://images.woodlandworldwide.app/assets/Winter/wdl_shoe_banner.webp"  class="img-fluid" alt="...">
+          <div class="card-body position-absolute bottom-0 ">
+            <a href="#" class="btn text-white px-3 py-2" id="big-picture">Shop Now</a>
+          </div>
+        </div>
+      </section>
+      <section class="container-xl mt-3">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner ">
+            <div class="carousel-item active"data-bs-interval="2000">
+              <div class="row g-3">
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC015050121A/OLIVE_GREEN/FGC015050121A_031_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>olive casuel sneaker</h5>
+                      <p>50$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0BM027501A/DNAVY/FGC0BM027501A_0.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>white sports shoes for men</h5>
+                      <p>500$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0L4056111G/CAMEL/FGC0L4056111G_010_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Navy sneaker for men</h5>
+                      <p>70$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0H9050081A/NAVY/FGC0H9050081A_030_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Pink sneakers for women</h5>
+                      <p>170$</p>
+                    </div>
+                  </div> 
+            </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row g-3">
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0L9056091G/OLIVE_GREEN/FGC0L9056091G_031_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>sport shoes for women</h5>
+                      <p>80$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0Q6038252A/TURQUOISE/FGC0Q6038252A_634_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Navy sneaker for men</h5>
+                      <p>70$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0H9050081A/NAVY/FGC0H9050081A_030_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>olive casuel sneaker</h5>
+                      <p>50$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0AA035931A/OLIVE_GREEN/FGC0AA035931A_031_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>white sports shoes for men</h5>
+                      <p>500$</p>
+                    </div>
+                  </div> 
+            </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row g-3">
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC015050121A/OLIVE_GREEN/FGC015050121A_031_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>white sports shoes for men</h5>
+                      <p>500$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0BM027501A/DNAVY/FGC0BM027501A_0.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>sport shoes for women</h5>
+                      <p>80$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0L4056111G/CAMEL/FGC0L4056111G_010_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Black sandals for men</h5>
+                      <p>90$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0H9050081A/NAVY/FGC0H9050081A_030_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Black sandals for Women</h5>
+                      <p>150$</p>
+                    </div>
+                  </div> 
+            </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row g-3">
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0L9056091G/OLIVE_GREEN/FGC0L9056091G_031_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Pink sneakers for women</h5>
+                      <p>170$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0Q6038252A/TURQUOISE/FGC0Q6038252A_634_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>olive casuel sneaker</h5>
+                      <p>50$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0H9050081A/NAVY/FGC0H9050081A_030_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>white sports shoes for men</h5>
+                      <p>500$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0AA035931A/OLIVE_GREEN/FGC0AA035931A_031_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Black sandals for Women</h5>
+                      <p>150$</p>
+                    </div>
+                  </div> 
+            </div>
+            </div>
+          </div>
+          </div>
+      </section>
+      <section class="py-4">
+        <div class="row g-2">
+          <div class="col-sm-12 col-lg-6">
+            <div class="card position-relative">
+              <img src="https://images.woodlandworldwide.app/assets/Winter/m_apparel_banner.webp"  class="img-fluid" alt="...">
+              <div class="card-body position-absolute bottom-0 ">
+                <h3 class="text-white">Shop Men's Apparel</h3>
+                <a href="#" class="btn text-white px-3 py-2" id="big-picture">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="card position-relative">
+              <img src="https://images.woodlandworldwide.app/assets/Winter/f_apparel_banner.webp"  class="img-fluid" alt="...">
+              <div class="card-body position-absolute bottom-0 ">
+                <h3 class="text-white">Shop Women's Apparel</h3>
+                <a href="#" class="btn text-white px-3 py-2" id="big-picture">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="px-4">
+        <div class="row g-2">
+          <div class="col-sm-6 col-lg-3">
+            <div class="card">
+              <img src="https://images.woodlandworldwide.app/assets/Winter/Leather_Jacket.webp" class="card-img-top" alt="...">
+              <div class="card-body mt-3 p-0">
+                <h5 class="card-title">Leather Jackets</h5>
+                <div class="d-flex justify-content-between">
+                <p class="card-text">Shop Men</p>
+                <p class="card-text ">Shop women</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card">
+              <img src="https://images.woodlandworldwide.app/assets/Winter/Hoodie.webp" class="card-img-top" alt="...">
+              <div class="card-body mt-3 p-0">
+                <h5 class="card-title">Hoodies</h5>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text">Shop Men</p>
+                  <p class="card-text ">Shop women</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card ">
+              <img src="https://images.woodlandworldwide.app/assets/Winter/Jacket.webp" class="card-img-top" alt="...">
+              <div class="card-body mt-3 p-0">
+                <h5 class="card-title">Winter jackets</h5>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text">Shop Men</p>
+                  <p class="card-text ">Shop women</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card ">
+              <img src="https://images.woodlandworldwide.app/assets/Winter/Jeans.webp" class="card-img-top" alt="...">
+              <div class="card-body mt-3 p-0">
+                <h5 class="card-title">Jeans</h5>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text">Shop Men</p>
+                  <p class="card-text ">Shop women</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-3">
+        <div class="card position-relative">
+          <img src="https://images.woodlandworldwide.app/assets/Winter/woodsport_banner.webp"  class="img-fluid" alt="...">
+          <div class="card-body position-absolute bottom-0 ">
+            <a href="#" class="btn text-white px-3 py-2" id="big-picture">Shop Now</a>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 container-xl">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner ">
+            <div class="carousel-item active"data-bs-interval="2000">
+              <div class="row g-3">
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC015050121A/OLIVE_GREEN/FGC015050121A_031_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>olive casuel sneaker</h5>
+                      <p>50$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0BM027501A/DNAVY/FGC0BM027501A_0.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>white sports shoes for men</h5>
+                      <p>500$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0L4056111G/CAMEL/FGC0L4056111G_010_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Navy sneaker for men</h5>
+                      <p>70$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0H9050081A/NAVY/FGC0H9050081A_030_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Pink sneakers for women</h5>
+                      <p>170$</p>
+                    </div>
+                  </div> 
+            </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row g-3">
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0L9056091G/OLIVE_GREEN/FGC0L9056091G_031_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>sport shoes for women</h5>
+                      <p>80$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0Q6038252A/TURQUOISE/FGC0Q6038252A_634_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Navy sneaker for men</h5>
+                      <p>70$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0H9050081A/NAVY/FGC0H9050081A_030_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>olive casuel sneaker</h5>
+                      <p>50$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0AA035931A/OLIVE_GREEN/FGC0AA035931A_031_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>white sports shoes for men</h5>
+                      <p>500$</p>
+                    </div>
+                  </div> 
+            </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row g-3">
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC015050121A/OLIVE_GREEN/FGC015050121A_031_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>white sports shoes for men</h5>
+                      <p>500$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0BM027501A/DNAVY/FGC0BM027501A_0.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>sport shoes for women</h5>
+                      <p>80$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0L4056111G/CAMEL/FGC0L4056111G_010_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Black sandals for men</h5>
+                      <p>90$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0H9050081A/NAVY/FGC0H9050081A_030_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Black sandals for Women</h5>
+                      <p>150$</p>
+                    </div>
+                  </div> 
+            </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row g-3">
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0L9056091G/OLIVE_GREEN/FGC0L9056091G_031_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Pink sneakers for women</h5>
+                      <p>170$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0Q6038252A/TURQUOISE/FGC0Q6038252A_634_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>olive casuel sneaker</h5>
+                      <p>50$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0H9050081A/NAVY/FGC0H9050081A_030_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>white sports shoes for men</h5>
+                      <p>500$</p>
+                    </div>
+                  </div> 
+                  <div class="card col-sm-12 col-lg-3">
+                    <img src="https://assets.woodlandworldwide.app/compressed/images/FGC0AA035931A/OLIVE_GREEN/FGC0AA035931A_031_0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5>Black sandals for Women</h5>
+                      <p>150$</p>
+                    </div>
+                  </div> 
+            </div>
+            </div>
+          </div>
+          </div>
+      </section>
+      <section>
+        <div class="row g-0">
+          <div class="col-sm-12 col-lg-4">
+            <div class="card position-relative">
+              <img src="https://images.woodlandworldwide.app/assets/Winter/bag_cat_banner.webp" class="card-img-top" alt="...">
+              <div class="card-body position-absolute text-center bottom-0 start-50 translate-middle-x">
+                <h3 class="card-title text-white">Bags</h3>
+                <a href="#" class="btn btn-outline-light px-4 py-2">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div class="card position-relative">
+              <img src="https://images.woodlandworldwide.app/assets/Winter/shoecare_cat_banner.webp" class="card-img-top" alt="...">
+              <div class="card-body position-absolute text-center bottom-0 start-50 translate-middle-x">
+                <h3 class="card-title text-white">Shoe Care</h3>
+                <a href="#" class="btn btn-outline-light px-4 py-2">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div class="card position-relative">
+              <img src="https://images.woodlandworldwide.app/assets/Winter/beltsandmore_cat_banner.webp" class="card-img-top" alt="...">
+              <div class="card-body position-absolute text-center bottom-0 start-50 translate-middle-x">
+                <h3 class="card-title text-white">Belts and More</h3>
+                <a href="#" class="btn btn-outline-light px-4 py-2">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-5">
+        <p class="text-center m-0 ">AS WORN BY WOODLAND FAM</p>
+        <p class="text-center mb-2 p-0">Click to shop & mention us on instagram @woodlandworldwide to be featured</p>
+        <div class="d-grid">
+          <div>
+            <img src="https://www.woodlandworldwide.com/insta_1.JPG" alt="...">
+          </div>
+          <div>
+            <img src="https://www.woodlandworldwide.com/insta_2.jpeg" alt="...">
+          </div>
+          <div >
+            <img src="https://www.woodlandworldwide.com/insta_3.JPG" alt="...">
+          </div>
+          <div >
+            <img src="https://www.woodlandworldwide.com/insta_4.JPG" alt="...">
+          </div>
+          <div>
+            <img src="https://www.woodlandworldwide.com/insta_5.JPG" alt="...">
+          </div>
+        </div>
+      </section>
+      <section class="mt-2">
+        <div class="row g-2">
+          <div class="col-sm-12 col-lg-6">
+            <div class="card position-relative">
+              <img src="https://images.woodlandworldwide.app/assets/Winter/pro_planet_banner.webp"  class="img-fluid" alt="...">
+              <div class="card-body position-absolute bottom-0 ">
+                <h3 class="text-white">Shop Men's Apparel</h3>
+                <a href="#" class="btn text-white px-3 py-2" id="big-picture">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="card position-relative">
+              <img src="https://images.woodlandworldwide.app/assets/Winter/r_lab_banner.webp"  class="img-fluid" alt="...">
+              <div class="card-body position-absolute bottom-0 ">
+                <h3 class="text-white">Shop Women's Apparel</h3>
+                <a href="#" class="btn text-white px-3 py-2" id="big-picture">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-white py-5 mt-2">
+      <div class="px-4 ">
+        <div>
+          <img src="https://www.woodlandworldwide.com/footerlogo.png" height="60" width="100">
+        </div>
+      <div class="row">
+      <div class="col-sm-12 col-lg-6 row mt-4">
+        <div class="col-xs-12 col-4 ">
+          <p >Shop Footwear</p>
+          <ul class="p-0 products">
+            <li>
+              <a>Boots</a>
+            </li>
+            <li>
+              <a>Sneakers/Sports</a>
+            </li>
+            <li>
+              <a>Casuals</a>
+            </li>
+            <li>
+              <a>Formals</a>
+            </li>
+            <li>
+              <a>Slippers/Flip-Flops</a>
+            </li>
+            <li>
+              <a>Sandals</a>
+            </li>
+            <li>
+              <a>Safety Shoes</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-4 ">
+          <p>Company</p>
+          <ul class="p-0">
+            <li>
+              <a>Jackets</a>
+            </li>
+            <li>
+              <a>T-shirts</a>
+            </li>
+            <li>
+              <a>Shirts</a>
+            </li>
+            <li>
+              <a>Sweaters</a>
+            </li>
+            <li>
+              <a>Sweatshirts & Hoodies</a>
+            </li>
+            <li>
+              <a>Innerwear Tops</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-4">
+          <p>Shop Accessories & Bags</p>
+          <ul class="p-0">
+            <li>
+              <a>Handbags</a>
+            </li>
+            <li>
+              <a>Socks</a>
+            </li>
+            <li>
+              <a>Fanny Bags</a>
+            </li>
+            <li>
+              <a>Shoe Care</a>
+            </li>
+            <li>
+              <a>Trolley Bags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-6 row">
+        <div class="col-sm-12 col-lg-6 pt-3">
+          <h6>Contact Us</h6>
+          <p style="font-size:smaller;">Need some more help? Get in touch with us and we’ll be more than happy to guide you through!</p>
+          <a style="font-size:smaller; text-decoration: underline;">care@woodlandworldwide.com</a>
+          <a style="font-size:smaller; display: block;text-decoration: underline;">1800 103 3445</a>
+          <p style="font-size:smaller;" class="mt-1">Woodland Customer Service Reps are available for inquiries Monday to Friday from 10AM to 6PM.</p>
+        </div>
+        <form class="col-sm-12 col-lg-6 pt-4">
+          <label>Always keep exploring more!</label>
+          <p>Get alerts for new arrivals, offers, and more!</p>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control py-2 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" style="font-size:smaller;border-radius: 0;">
+            <button class="btn btn-outline-secondary bg-white text-black" type="button" id="button-addon2" style="font-size:smaller">submit</button>
+            <p style="font-size:smaller " class="mt-2">By entering your email, you agree to our Terms of Service & Privacy Policy, including receipt of emails and promotions. You can unsubscribe at any time.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-12 col-lg-3 d-flex justify-content-between">
+      <a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="25" width="25"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+      <a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="25" width="25"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+      <a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="25" width="25"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+      <a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="25" width="25"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
+      <a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="25" width="25"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+    </div>
+  </div>
+  <div class="row mt-4" id="informations">
+  <div class="col-sm-12 col-lg-7 ">
+    <ul class="information m-0 p-0">
+    <li><a style="font-size:smaller;">About Us</a></li>
+    <li><a style="font-size:smaller;">Terms and Services</a></li>
+    <li><a style="font-size:smaller;">Privacy Policy</a></li>
+    <li><a style="font-size:smaller;">Blogs</a></li>
+    <li><a style="font-size:smaller;">Institutional Enquiry</a></li>
+    <li><a style="font-size:smaller;">Refund policy</a></li>
+    <li><a style="font-size:smaller;">Store Locator</a></li>
+  </ul>
+  </div>
+  <div class="col-sm-12 col-lg-5 ">
+    <p style="font-size:smaller;" class="text-end">Copyright 2024, Woodland (Aero Club) Private Limited</p>
+  </div>
+</div>
+  </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html
